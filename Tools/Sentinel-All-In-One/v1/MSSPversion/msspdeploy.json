@@ -5,23 +5,23 @@
         "mspOfferName": {
             "type": "string",
             "metadata": {
-                "description": "Specify a unique name for your offer"
+                "description": "Stripe OLT - Managed Security Services"
             },
-            "defaultValue": "<enter the MSSP offer name>"
+            "defaultValue": "Stripe OLT - Managed Security Services"
         },
         "mspOfferDescription": {
             "type": "string",
             "metadata": {
-                "description": "Name of the Managed Service Provider offering"
+                "description": "Stripe OLT - Managed Security Services"
             },
-            "defaultValue": "<enter the MSSP offer description>"
+            "defaultValue": "Stripe OLT - Managed Security Services"
         },
         "managedByTenantId": {
             "type": "string",
             "metadata": {
-                "description": "Specify the tenant id of the Managed Service Provider"
+                "description": "a781518e-02ab-4def-a4c5-72acb2016ae2"
             },
-            "defaultValue": "<enter the MSSP Tenant ID (where your identities reside)>"
+            "defaultValue": "a781518e-02ab-4def-a4c5-72acb2016ae2"
         },
         "authorizations": {
             "type": "array",
@@ -29,11 +29,35 @@
                 "description": "Specify an array of objects, containing tuples of Azure Active Directory principalId, a Azure roleDefinitionId, and an optional principalIdDisplayName. The roleDefinition specified is granted to the principalId in the provider's Active Directory and the principalIdDisplayName is visible to customers."
             },
             "defaultValue": [
-                {
-                    "principalId": "917ba8d6-5c07-4d11-ae26-dccba5df6405",
-                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
-                    "principalIdDisplayName": "SOC users"
-                }
+               { 
+                    "principalId": "b49bd404-0448-43af-a3a2-e86099348106", 
+                    "roleDefinitionId": "39bc4728-0917-49c7-9d2c-d95423bc2eb4",
+                    "principalIdDisplayName": "SecOps - Viewers" 
+                },  
+				{ 
+                    "principalId": "b49bd404-0448-43af-a3a2-e86099348106", 
+                    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
+                    "principalIdDisplayName": "SecOps - Viewers" 
+                }, 
+                { 
+                    "principalId": "b49bd404-0448-43af-a3a2-e86099348106", 
+                    "roleDefinitionId": "fb1c8493-542b-48eb-b624-b4c8fea62acd",
+                    "principalIdDisplayName": "SecOps - Admins" 
+                },
+                { 
+                    "principalId": "b49bd404-0448-43af-a3a2-e86099348106", 
+                    "roleDefinitionId": "87a39d53-fc1b-424a-814c-f7e04687dc9e",
+                    "principalIdDisplayName": "SecOps - Admins" 
+                },
+                { 
+                    "principalId": "b49bd404-0448-43af-a3a2-e86099348106", 
+                    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+                    "principalIdDisplayName": "SecOps - Admins" 
+                }                   
+                    ]
+                }                
+        }
+}           
             ]
         },
         "rgName": {
